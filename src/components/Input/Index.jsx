@@ -4,17 +4,19 @@ import { Icon } from '@iconify/react';
 function Input({ onCityNameChange }){
 
     const [cityName, setCityName] = useState('');
+
     const handleInputChange = (e) => {
-        const inputValue = e.target.value;
-        setCityName(inputValue);
-        onCityNameChange(inputValue);
+        setCityName(e.target.value);
+    }
+    const handleButtonCklick = ()=>{
+        onCityNameChange(cityName)
     }
 
     return (
         <div>
         <h3>City</h3>
         <input type="text" onChange={handleInputChange} />
-        <button><Icon icon="solar:map-point-search-line-duotone" /></button>
+        <button onClick={handleButtonCklick}><Icon icon="solar:map-point-search-line-duotone" /></button>
         </div>
     )
 

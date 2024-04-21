@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import s from './App.css'
 import DisplayWeather from './components/DisplayWeather/Index';
 
 
@@ -7,7 +7,7 @@ function App() {
   
 
   return (
-      <div>
+      <div className={s.app}>
           <DisplayWeather />
       </div>
   );
