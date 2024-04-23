@@ -26,7 +26,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+ 
 }
 .cityName{
     font-size: 3rem;
@@ -55,8 +55,8 @@
        }
       
        .cityWithDateAndIconWithDescription{
-     
-        gap: 6rem;
+        
+        min-width: 90vw;
     }
        .cityName{
            font-size: 2rem;
