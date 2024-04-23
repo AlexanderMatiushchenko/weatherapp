@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { apiKey, kelvinT } from "../../utils/var";
-
+import ShowDate from "../ShowDate/Index";
+import s from "./index.module.css"
+import { Icon } from '@iconify/react';
 
 function WeatherItem(props) {
 
@@ -29,13 +31,24 @@ function WeatherItem(props) {
 
 
     return (
-            <div>
+            <div className={s.mainContainer}>
+               
                 {weatherData && weatherData.weather && (
                     <>
-                    <p>{weatherData.name}</p>
-                    <p>{weatherData.weather[0].description}</p>
+                    <div className={s.cityWithDateAndIconWithDescription}>
+                    <div className={s.containerwithDateAndCity}>
+                    <div className={s.containerWithCity}>
+                     <p><Icon icon="arcticons:mapsgeobookmarks" width="1rem" height="1rem" /></p>
+                    <h2>{weatherData.name}</h2>
+                    </div>
+                    <ShowDate />
+                    </div>
+                    <div className={s.iconWithDescription}>
                     <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`} alt="Weather Icon" />
-                    <p>Temperature: {Math.floor(weatherData.main.temp - kelvinT)}</p>
+                    <p>{weatherData.weather[0].description}</p>
+                    </div>
+                    </div>
+                    <p>Temperature: {Math.floor(weatherData.main.temp - kelvinT)}°C</p>
                    
                    <p>Feels like: {Math.floor(weatherData.main.feels_like - kelvinT)}°C</p>
                    <p>Wind: {Math.floor(weatherData.wind.speed)} m/s</p>

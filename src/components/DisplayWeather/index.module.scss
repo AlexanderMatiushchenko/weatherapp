@@ -1,5 +1,15 @@
 .mainContainer{
     background-image:url(../../assets/Blue_sky_Background.png);
 background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+min-width: 100vw;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   }
+  
   

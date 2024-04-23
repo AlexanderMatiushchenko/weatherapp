@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Icon } from '@iconify/react';
+import s from './index.module.css'
 
 function Input({ onCityNameChange }){
 
@@ -13,10 +14,9 @@ function Input({ onCityNameChange }){
     }
 
     return (
-        <div>
-        <h3>City</h3>
-        <input type="text" onChange={handleInputChange} />
-        <button onClick={handleButtonCklick}><Icon icon="solar:map-point-search-line-duotone" /></button>
+        <div className={s.mainContainerInput}>
+        <input type="text" onChange={handleInputChange} placeholder='City' />
+        <button className={s.inputButton} onClick={handleButtonCklick}><Icon icon="gis:search-map"  /></button>
         </div>
     )
 

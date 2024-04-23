@@ -15,8 +15,9 @@ function DisplayWeather() {
     return (
         <div className={s.mainContainer}>
             <Input onCityNameChange={handleCityNameChange} />
-            {/* <WeatherItem cityName={cityName} /> */}
-           <WeatherItemFiveDays cityName={cityName} />
+        
+            <WeatherItem cityName={cityName} />
+           {/* <WeatherItemFiveDays cityName={cityName} /> */}
         </div>
     );
 }

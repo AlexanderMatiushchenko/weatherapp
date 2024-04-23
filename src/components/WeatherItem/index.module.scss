@@ -1,0 +1,23 @@
+.mainContainer{
+
+}
+.containerWithCity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.containerwithDateAndCity{
+    display: flex;
+    flex-direction: column;
+}
+.iconWithDescription{
+    
+}
+.cityWithDateAndIconWithDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
