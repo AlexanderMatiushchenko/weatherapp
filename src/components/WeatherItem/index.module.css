@@ -1,3 +1,7 @@
+.mainContainer h4 {
+  font-size: 2rem;
+}
+
 .containerWithCity {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,6 +25,22 @@
           flex-direction: column;
 }
 
+.iconWithDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .cityWithDateAndIconWithDescription {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,5 +55,53 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10rem;
+  gap: 1rem;
+}
+
+.cityName {
+  font-size: 3rem;
+}
+
+.weatherImage {
+  width: 10rem;
+  height: auto;
+}
+
+.weatherTemperature {
+  font-size: 5rem;
+}
+
+.weatherTemperatureFeelsLike {
+  font-size: 2rem;
+}
+
+.weatherText {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .mainContainer h4 {
+    font-size: 1rem;
+  }
+  .cityWithDateAndIconWithDescription {
+    gap: 6rem;
+  }
+  .cityName {
+    font-size: 2rem;
+  }
+  .weatherImage {
+    width: 6rem;
+    height: auto;
+  }
+  .weatherTemperature {
+    font-size: 3rem;
+  }
+  .weatherTemperatureFeelsLike {
+    font-size: 1.5rem;
+  }
+  .weatherText {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }

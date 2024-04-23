@@ -1,4 +1,7 @@
 .mainContainer{
+ h4{
+    font-size: 2rem;
+ }
 
 }
 .containerWithCity{
@@ -12,6 +15,10 @@
     flex-direction: column;
 }
 .iconWithDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     
 }
 .cityWithDateAndIconWithDescription{
@@ -19,5 +26,54 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10rem;
+    gap: 1rem;
+}
+.cityName{
+    font-size: 3rem;
+}
+
+.weatherImage{
+    width: 10rem;
+    height: auto;
+}
+.weatherTemperature{
+    font-size: 5rem;
+}
+.weatherTemperatureFeelsLike{
+    font-size: 2rem;
+}
+.weatherText{
+    font-size: 1.2rem;
+    font-weight:500;
+}
+@media only screen and (max-width: 767px){
+    .mainContainer{
+        h4{
+           font-size: 1rem;
+        }
+       
+       }
+      
+       .cityWithDateAndIconWithDescription{
+     
+        gap: 6rem;
+    }
+       .cityName{
+           font-size: 2rem;
+       }
+       
+       .weatherImage{
+           width: 6rem;
+           height: auto;
+       }
+       .weatherTemperature{
+           font-size: 3rem;
+       }
+       .weatherTemperatureFeelsLike{
+           font-size: 1.5rem;
+       }
+       .weatherText{
+           font-size: 1rem;
+           font-weight:500;
+       } 
 }
