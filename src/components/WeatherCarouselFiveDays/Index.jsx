@@ -2,21 +2,22 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WeatherItemFiveDays from '../WeatherItemFiveDays/Index';
 
-function WeatherCarouselFiveDays ({ cityName }){
+function WeatherCarouselFiveDays (){
     
 
-    console.log(cityName);
+    
     return(
         
             <div id="carouselExample" className="carousel slide">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                    <WeatherItemFiveDays cityName={cityName} />
+             <img src="" alt="11111" />
                     </div>
                     <div className="carousel-item">
-                    
+                    <img src="" alt="2222222" />
                     </div>
                     <div className="carousel-item">
+                    <img src="" alt="33333333" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
