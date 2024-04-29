@@ -42,6 +42,24 @@
   min-height: 5rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .customColMd2 {
+    min-width: 20rem;
+    max-width: 20rem;
+    padding: 2rem;
+  }
+  .customColMd2 p {
+    font-size: 2rem;
+    font-weight: 500;
+    overflow-wrap: break-word;
+  }
+  .customCarouselExample {
+    right: 0rem;
+  }
+  .imgForecastFiveDays {
+    min-width: 8rem;
+  }
+}
 @media only screen and (max-width: 767px) {
   .customColMd2 {
     min-width: 14rem;
