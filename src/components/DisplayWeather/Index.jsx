@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { apiKey } from "../../utils/var";
 import Input from '../Input/Index';
 import WeatherItem from '../WeatherItem/Index';
-
 import WeatherCarouselFiveDays from '../WeatherCarouselFiveDays/Index';
 import s from './index.module.css'
 
@@ -31,9 +30,9 @@ function DisplayWeather() {
         <div className={s.mainContainer}>
             <Input onCityNameChange={handleCityNameChange} />
         
-            {/* <WeatherItem cityName={cityName} /> */}
+            <WeatherItem cityName={cityName} />
             <WeatherCarouselFiveDays cityName={cityName}  />
-           {/* <WeatherItemFiveDays cityName={cityName} /> */}
+           
         </div>
     );
 }

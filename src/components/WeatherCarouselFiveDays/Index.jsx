@@ -45,8 +45,8 @@ function WeatherCarouselFiveDays ({cityName}) {
                                         
                                         <img className={s.imgForecastFiveDays} src={`https://openweathermap.org/img/wn/${item.weather[0].icon}.png`} alt="Weather Icon" />
                                         <p>{item.weather[0].description}</p>
-                                        <p>Max: {Math.floor(maxTemp - kelvinT)}°C</p>
-                                        <p>Min: {Math.floor(minTemp - kelvinT)}°C</p>
+                                        <p>{Math.floor(maxTemp - kelvinT)}°/{Math.floor(minTemp - kelvinT)}°</p>
+                            
                                     </div>
                                 </div>
                             </div>
