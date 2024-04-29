@@ -29,7 +29,7 @@ function DisplayWeather() {
     return (
         <div className={s.mainContainer}>
             <Input onCityNameChange={handleCityNameChange} />
-        
+            
             <WeatherItem cityName={cityName} />
             <WeatherCarouselFiveDays cityName={cityName}  />
            

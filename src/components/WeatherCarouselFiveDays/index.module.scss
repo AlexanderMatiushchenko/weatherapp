@@ -1,4 +1,6 @@
 .custom-carousel-item{
+    width: 100%;
+    overflow: hidden
 
 }
 .customColMd2{
@@ -24,7 +26,7 @@
     }
 }
 .imgForecastFiveDays{
-    min-width: 8rem;
+    min-width: 5rem;
 }
 .customCarouselExample{
    padding: 0 5rem 0 5rem; 
@@ -34,4 +36,28 @@
     min-width: 5rem;
     min-height: 5rem;
 
+}
+@media only screen and (max-width:767px){
+    .customColMd2{
+        min-width: 14rem;
+        max-width: 14rem;
+        p{
+            font-size: 1.5rem;
+            font-weight: 500;
+            overflow-wrap:break-word ;
+        }
+    }
+    .customCarouselExample{
+        padding: 0 3rem 0 3rem; 
+        right: 0rem;
+     }
+     .customCarouseControlIcon{
+        min-width: 3rem;
+        min-height: 3rem;
+    
+    }
+    .imgForecastFiveDays{
+        min-width: 4rem;
+    }
+    
 }

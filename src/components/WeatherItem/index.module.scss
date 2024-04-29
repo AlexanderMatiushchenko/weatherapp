@@ -1,4 +1,5 @@
 .mainContainer{
+    margin-top: 5rem;
  h4{
     font-size: 2rem;
  }
@@ -37,10 +38,10 @@
     height: auto;
 }
 .weatherTemperature{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .weatherTemperatureFeelsLike{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .weatherText{
     font-size: 1.2rem;
@@ -56,7 +57,7 @@
       
        .cityWithDateAndIconWithDescription{
         
-        min-width: 90vw;
+        min-width: 80vw;
     }
        .cityName{
            font-size: 2rem;

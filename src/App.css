@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
-p{
-  margin-bottom:auto;
+p {
+  margin-bottom: 0rem !important;
 }
+

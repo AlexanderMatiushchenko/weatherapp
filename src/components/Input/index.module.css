@@ -13,7 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  position: relative;
+  position: fixed;
   top: 2rem;
 }
 .mainContainerInput input {
